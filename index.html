@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple web.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            text-decoration: none;
+            margin: 100;
+
+        }
+
+        .topbar {
+            background-color: rgb(0, 0, 0);
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 15px;
+            top: 0;
+            left: 0;
+            align-items: center;
+            display: flex;
+            position: fixed;
+            width: 95%;
+            z-index: 10;
+
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 30px;
+        }
+
+        .flist {
+            list-style: none;
+            display: flex;
+            gap: 45px;
+            margin-left: auto;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+
+        }
+
+        li a {
+            color: blanchedalmond;
+        }
+
+        .typing-container {
+            display: flex;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .typing {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            color: #ec0202;
+            border-right: 2px solid;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .zoom-out img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .zoom-out img:hover {
+            transform: scale(0.8);
+        }
+
+        #About {
+            margin: auto;
+            border: 1px solid black;
+            width: 68px;
+            height: px;
+            background-color: #040404;
+            top: 100px;
+            padding: 10px 20px;
+            z-index: 5;
+            left: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            color: white;
+            animation: mymove 5s infinite;
+        }
+
+        @keyframes mymove {
+            50% {
+                transform: rotate(180deg);
+            }
+        }
+
+        #Interest {
+            background-color: #040404;
+            color: white;
+            margin: auto;
+            border: 1px solid black;
+            width: 68px;
+            height: px;
+            top: 100px;
+            padding: 10px 20px;
+            z-index: 5;
+            left: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            animation: mymove 5s infinite;
+        }
+
+        @keyframes mymoves {
+            50% {
+                transform: rotate(180deg);
+            }
+        }
+
+        .image-heading {
+            top: 30%;
+            left: 30%;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .fa-linkedin {
+            font-size: 50px;
+        }
+
+        .fa-facebook {
+            font-size: 50px;
+        }
+
+        .fa-instagram {
+            font-size: 50px;
+        }
+
+        #contact {
+            background-color: #040404;
+            color: white;
+            margin: auto;
+            border: 1px solid black;
+            width: 68px;
+            height: px;
+            top: 100px;
+            padding: 10px 20px;
+            z-index: 5;
+            left: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            animation: mymove 5s infinite;
+        }
+
+        @keyframes mymoves {
+            50% {
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="topbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#"><b style="color: rgb(251, 249, 247);">BHANU<span
+                            style="color: rgb(128, 125, 125);">.WEB</span></b></a></div>
+            <ul class="flist">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Interest">Interest</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="Home">
+        <div class="image-container" style="position: relative; text-align: left;">
+            <img src="bw .jpg" alt="load" width="1395px" height="1100" style="align-items: center;">
+            <div class="text-overlay"
+                style="position: absolute; top: 50%; left: 10%; transform: translateY(-50%); color: white;">
+                <h1 class="image-heading">Hi I'm BHANUCHARAN</h1>
+                <div class="typing-container">
+                    <p class="typing">Aspiring Data Analyst | Full-Stack Developer | UX Design .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h2 id="About">About</h2>
+        <p>Welcome to my website! I'm on an exciting journey to become a skilled full-stack developer, working hard to
+            turn my future goals into reality. My passion for technology drives me to keep learning and building amazing
+            projects that showcase my growth and creativity.
+            <br>
+            But it's not all code and screens! In my free time, I love diving into the thrilling world of Free Fire,
+            enjoying the challenge and excitement it offers. And when it's time to relax, nothing beats the soulful
+            melodies of Arijit Singh – his songs are truly a source of inspiration and peace for me.
+            <br>
+            This website is a glimpse into my interests, hobbies, and aspirations. I’m here to connect with like-minded
+            people, share my journey, and learn from each other's experiences. Let's connect, collaborate, and explore
+            exciting possibilities together!
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h3 id="Interest">Interest</h3>
+       <p><b>Gaming:</b>
+        I love immersing myself in the thrilling world of Free Fire. The strategy, teamwork, and fast-paced action of the game keep me hooked. It's not just about winning; it's about improving skills, learning new strategies, and connecting with fellow gamers from around the world.
+        <br>
+       <b>Music:</b>
+        When I'm not playing games, you can often find me lost in the soulful melodies of Arijit Singh's songs. His voice and music have a calming effect that helps me relax and stay focused. Music is my go-to therapy and a big source of inspiration.
+        <br>
+       <b> Web Development & Learning:</b>
+        I'm passionate about building websites and learning new technologies. Platforms like W3Schools and YouTube (Code With Harry) have been incredibly helpful in my journey. Creating and designing websites that provide a great user experience is something I truly enjoy.
+        <br>
+       <b> Social Media:</b>
+        I also like exploring social media platforms like Instagram to stay updated with trends and showcase my work. It's a great place to learn from others and share my own progress.</p>
+<br>
+        <div class="zoom-out">
+            <a href="https://ffshare.garena.com/?region=IND&lang=en">
+                <img src="FreeFire-Max-header.jpg" width="700px" alt="load">
+            </a>
+            <a href="https://www.youtube.com/live/IVjl5u4s-mQ?si=sQEtdH4L5WhKs97C">
+                <img src="apple-music-note.jpg" width="700px" alt="load">
+            </a>
+            <a href="https://www.w3schools.com/">
+                <img src="w3.jpeg" width="700px" alt="load">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="instagramimg.jpg" width="700px" alt="load">
+            </a>
+        </div>
+    </section>
+    <hr>
+    <h3 id="contact">Contact me</h3>
+    <p>Let's connect and create something amazing together!
+        Feel free to reach out to me through the links below. I'm always open to new ideas, collaborations, or just a friendly chat.</p>
+    <section style="display: flex; gap: 100px; justify-content: center;">
+        <a
+            href="https://www.linkedin.com/in/bhanu-charan-kalla-89a378307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/marketplace/profile/61559061421590/?ref=permalink&mibextid=dXMIcH"><i
+                class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bhanu_charan_06?igsh=MWR1eTkyNDYyb3EzbQ=="><i
+                class="fa-brands fa-instagram"></i></a>
+    </section>
+</body>
+
+</html>
