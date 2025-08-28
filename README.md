@@ -2,12 +2,18 @@
 -This repo contains my daily mini projects on frontend part
 -To analyse my quality of work by doing these frame works, layouts building and responsivity check.
 
-## 🛠️ Tech Stack
+# 🛠️ Tech tools
 - HTML
 - CSS
 - JavaScript
+- Figma
 
-## 📂 Project Structure
+# Topics covered here
+- HTML Essentials, Sematic tags, Form& tables.
+- CSS  Text-propeerties, css-Selectors, Box-model, Display-property, Transitions, Media queries.
+-  
+  
+# 📂 Project Structure
 project-folder/
 │── index.html
 │── style.css
